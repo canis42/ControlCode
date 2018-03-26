@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="ccformat.css">
+  <title>Sinsations CC Speakwell</title>
+<script type="text/javascript" src="http://ff.kis.v2.scr.kaspersky-labs.com/DA65BDAB-8BFF-F74A-8B38-7ADF0373CD96/main.js" charset="UTF-8"></script></head>
+<body>
+<div>
+<h1>Sinsations CC Speakwell</h1>
+<p>SpeakWell checks what a subbie speaks. You can forbid words or limit the
+length of a sentence. If the subbie fails, then a punishment is played
+consisting of sounds, animations and RLV-restrictions. The punishment may end
+after a given time or if the subbie speaks a penance sentence.
+(see the <a href="http://mm.ymir.de/manuals/cc_punish.html">Punish Module</a></p>
+<p>The three items Banneds, Partials and Exacts allow to give lists of words
+to forbid to speak. They are given as words delimited by commatas.</p>
+
+<h2>Speakwell Main Menu</h2>
+<dl>
+<dt>Banneds</dt>
+<dd>Banneds are whole words that are not allowed to speak neither in lower case
+nor in upper case. e.g.:  with &quot;mine&quot;: &quot;mine&quot;,
+&quot;Mine&quot; and &quot;MINE&quot;  will be forbidden.</dd>
+<dt>Partials</dt>
+<dd>Partials are parts of words that are not allowed as own words nor as part
+of other words. e.g.:  with &quot;mine&quot; :  &quot;bemines&quot will be
+detected, also &quot;beMine&quot;.</dd>
+<dt>Exacts</dt>
+<dd>Exacts are whole words that are not allowed with the specific character
+case.  e.g.  &quot;miss&quot; allows &quot;Miss&quot; but forbids
+&quot;miss&quot;  or &quot;MIss&quot;</dd>
+<dt>Length</dt>
+<dd>Number of words a subbie may use in one sentence.</dd>
+<dt>Punishment</dt>
+<dd>This selects the name of the punishment from a list of punishments that will
+be performed if the sub fails. Please see the module "Punish" for a desription
+of punishments.</dd>
+<dt>Statistics</dt>
+<dd>Show statistics of subbie fails ordered by different fail classes. The
+dialog also contains a reset button to reset the statistics to 0.</dd>
+<dt>Active</dt>
+<dd>Check button to switch speakwell checks on or off.</dd>
+<dt>Clear All</dt>
+<dd>Clears all checks: Banneds,Partials, Exacts and Length.</dd>
+</dl>
+<h2>Speakwell Banneds/Partials/Exacts Menus</h2>
+A dialog is shown with 3 buttons to administrate the words.
+<dl>
+<dt>Add</dt>
+<dd>Add a list of words separated by commata to the current list of words.</dd>
+<dt>Delete</dt>
+<dd>Delete a list of words separated by commata of the current list of
+words</dd>
+<dt>Clear</dt>
+<dd>Remove all words.</dd>
+</dl>
+
+<h2>Commands</h2>
+
+<p>In the following desciption names in sharp braces should be replaced by current values</p>
+
+<p>Commands are issued in chat. They are given as<p>
+
+<code>&lt;prefix&gt; speakwell &lt;command&gt;</code>
+<p>e.g.: with prefix &quot;cc &quot; and mind the blank after speakwell:  ccspeakwell on</p>
+
+<p>speakwell can also be abbreviated with &quot;sw&quot; (cc is the prefix of the sub):  ccsw on
+
+<dl>
+<dt>menu sw</dt>
+<dd>Show the main speakwell menu</dd>
+<dt>speakwell</dt>
+<dd>Show the main speakwell menu</dd>
+<dt>sw banneds add &lt;list of words&gt</dt>
+<dd>Add words to the banneds list.</db>
+<dt>sw banneds delete &lt;list of words&gt</dt>
+<dd>Delete words from the banneds list.</db>
+<dt>sw banneds clear</dt>
+<dd>Remove all words from the banneds list.</db>
+<dt>sw partials add &lt;list of words&gt</dt>
+<dd>Add words to the partials list.</db>
+<dt>sw banneds delete &lt;list of words&gt</dt>
+<dd>Delete words from the partials list.</db>
+<dt>sw partials clear</dt>
+<dd>Remove all words from the partials list.</db>
+<dt>sw exacts add &lt;list of words&gt</dt>
+<dd>Add words to the exacts list.</db>
+<dt>sw exacts delete &lt;list of words&gt</dt>
+<dd>Delete words from the exacts list.</db>
+<dt>sw exacts clear</dt>
+<dd>Remove all words from the exacts list.</db>
+<dt>sw length &lt;number of words&gt;</dt>
+<dd>Maximum number of words in a sentence allowed to the sub</dd>
+<dt>sw punishment &lt;punishment name&gt;</dt>
+<dd>Define the punishment if the sub fails</dd>
+<dt>sw statistics show</dt>
+<dd>Show the statistics of fails for the sub</dd>
+<dt>sw statistics clear</dt>
+<dd>Set all statistics to zeroy/dd>
+<dt>sw on</dt>
+<dd>switch speakwell checks on</dd>
+<dt>sw off</dt>
+<dd>switch speakwell checks off</dd>
+<dt>Clear All</dt>
+<dd>Clear all word lists and the length</dd>
+</dl>
+
+<p><b>Copyright 2018 Canis Canning in SecondLife</b></p>
+</div>
+</body>
+</html>
