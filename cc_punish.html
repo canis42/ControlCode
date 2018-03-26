@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="ccformat.css">
+  <title>Sinsations CC Punish</title>
+<script type="text/javascript" src="http://ff.kis.v2.scr.kaspersky-labs.com/DA65BDAB-8BFF-F74A-8B38-7ADF0373CD96/main.js" charset="UTF-8"></script></head>
+<body>
+<div>
+<h1>Sinsations CC Punish</h1>
+<p>Punish defines named punishments. Punishments may be initiated directly from the punish
+menu or by other modules that define certain conditions under which a punishment should be
+applied. Only one punishment may be applied at any time. The punishment &quot;oc&quot;  is
+built in and can not be deleted. It also becomes the default if  no other punishment is defined
+as default.<p>
+<h2>Punish Menu</h2>
+<dl>
+<dt>Add</dt>
+<dd>Add a punishment. In the first dialog you have to give a name for the punishment. In the 
+second dialog you provide a textual definition of the punishment. Please see the chapter
+&quot;Punishment Definition&quot; below.
+<dt>Change</dt>
+<dd>Select a punishment name from the list of punishments. The retype the whole textual 
+definition of the punishment with your changes. Please see the chapter &quot;Punishment
+Definition&quot; below.</dd>
+<dt>Delete</dt>
+<dd>Select a punishment name from the list of punishments.  The punishment will be
+deleted.</dd>
+<dt>Start</dt>
+<dd>Select a punishment from the list of punishments. The Punishment will be played until you
+stop it.</dd>
+<dt>Stop</dt>
+<dd>Stop the currently applied punishment independent from how it has been applied.</dd>
+<dt>Punish</dt>
+<dd>Instantly apply the default punishment to the sub.</dd>
+<dt>Default</dt>
+<dd>Select the name of a punishment that should be the default punishment</dd>
+<dt>Active</dt>
+<dd>activate or deactivate all punishments</dd>
+</dl>
+
+<h2>Punishment Definition</h2>
+<p>Punishment definitions are used as punishments if the punishment of the supplied name
+is activated.</p>
+<p>Punishment definitions are given in Add- and Change menu items and in add and change
+commands.</p>
+<p>A Punishment is defined by a line of text consisting of a comma separated list of definitions:
+definition1,definition2,definition3,...<p>
+<p>A definition consists of a name and a value separated by a colon. The complete definition
+may look like this: <br>
+<i>anim:~shock,sound:sndhum,rlv:dizzy,text:%s failed!,duration:300,sentence:I wil NOT do
+ it again!</i></p>
+<dt>anim</dt>
+<dd>Animation to be played as a punishment.  Animations have to be in the Animate-prim.
+For example:~shock, ~shockold, ~nom, beautystand, belly, display, doggie, ...</dd>
+<dt>sound</dt>
+ <dd>The sound is a sound file located in the main prim. Sounds supplied by the punish
+ module are: sndau, sndhum, sndplasma, sndscream, sndvib.</dd>
+ <dt>text</dt>
+ <dd>The text is any text. it may contain %s which is replaced by the display name of the sub. The
+ text is written to the chat.</dd>
+ <dt>particles</dt>
+ <dd>Not implemented yet. This is the name of a particle definition notecard.</dd>
+ <dt>duration</dt>
+ <dd>This is the duration of the punishment in seconds. The punishment is stopped after the
+ given amount time (if not started using start). Default is 5 seconds if no sentence is given and
+ 120 seconds if a sentence is given.</dd>
+ <dt>sentence</dt>
+ <dd>This is a text that has to be spoken in chat by the sub to end the punishment.</dd>
+</dl>
+
+<h3>Punish Commands</h3>
+<p>Punish commands are issued on the chat line in the following form. Optionally a channel may be prependet like /1 <br>
+<i>&lt;prefix&gt; &lt;command&gt;</i></p>
+<p>Names in pointed brackets have to be replaced by actual values.</p>
+<dl>
+<dt>menu pu</dt>
+<dd>bring up the punish menu</dd>
+<dt>pu add &lt;name&gt;  &lt;definitions&gt;</dt>
+<dd>Add a new punishment definition.</dd>
+<dt>pu change &lt;name&gt;  &lt;definitions&gt;</dt>
+<dd>Change an existing punishment definition</dd>
+<dt>pu delete &lt;name&gt; </dt>
+<dd>Delete an existing punishment definition.</dd>
+<dt>pu start &lt;name&gt; </dt>
+<dd>Start a punishment until it is stopped manually</dd>
+<dt>pu stop</dt>
+<dd>Stop the currently applied punishment independent of how it is started.</dd>
+<dt>pu punish</dt>
+<dd>Start the default punishment using duration and sentence to stop it.</dd>
+<dt>pu default &lt;name&gt; </dt>
+<dd>Set the default to the given punishment name</dd>
+<dt>pu on</dt>
+<dd>Switch the punishment module on</dd>
+<dt>pu off</dt>
+<dd>Switch the punishment module off</dd>
+</dl>
+<p><b>Copyright 2018 Canis Canning in SecondLife</b></p>
+</div>
+</body>
+</html>
